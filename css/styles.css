@@ -1,0 +1,546 @@
+@font-face {
+  font-family:"proximanovaregular" ;
+  src: url(../fonts/proximanovaregular.otf);
+}
+@font-face {
+   font-family:"proximanovasemiboldit" ;
+  src: url(../fonts/proximanovasemiboldit.otf;)
+}
+@font-face {
+  font-family:"proximanovaboldit" ;
+  src: url(../fonts/proximanovaboldit.otf;)
+}
+@font-face {
+  font-family: "Myarid";
+  src: url(../fonts/myriadpro.otf);
+}
+@font-face {
+  font-family:"ProximaNovalight";
+  src: url(../fonts/proximanovalight.otf);  
+}
+@font-face {
+  font-family:"BlackJackRegular";
+  src: url(../fonts/BLACKJAR.TTF);  
+}
+@font-face {
+  font-family: "ProximaNova";
+  src: url(../fonts/proximanova.otf); 
+}
+@font-face {
+  font-family: "ProximaNovabold";
+  src: url(../fonts/proximanovabold.otf); 
+}
+@font-face {
+  font-family: "KaushanScript";
+  src: url(../fonts/KaushanScript.otf);
+}
+header strong {
+ font-family: "ProximaNovabold";
+}
+i {
+  padding-left: 10px;
+}
+body {
+  min-width: 320px !important;
+}
+header {
+  height: 651px;
+  background-image: url(../images/header.png);
+  overflow: hidden;
+}
+.logo {
+  float: left;
+  width: 100px;
+  height: 100px;
+  background-color: rgb(255, 255, 255);
+  font-family: "KaushanScript";
+  font-size: 50px;
+  color: rgb(13, 169, 229);
+  line-height: 0.5;
+  -webkit-box-shadow: 14px 15px 1px rgba(13, 169, 229, .7), 0 4px 0 rgba(13, 169, 229, .8);
+  box-shadow: 14px 15px 1px rgba(13, 169, 229, .7), 0 4px 0 rgba(13, 169, 229, .8);
+}
+#search {
+  float: right;
+  margin: 33.333px 0 0 0;
+  padding: 0;
+  width: 33px;
+  height: 30px;
+  background-color: rgba(255, 255, 255, 0);
+  border: none;
+  outline: none;
+}
+#search i {
+  color: white;
+  font-size: 30px;
+}
+.linebutton {
+  margin-top: 3px;
+  width: 30px;
+  height: 4px;
+  background-color: white;
+  border-radius: 15px;
+}
+.hidemenu {
+  display: none;
+  position: absolute;
+  left: 0;
+  top: 0;
+  width: 100vw;
+  min-width: 320px !important;
+  height: 651px;
+  background-color: rgba(243, 120, 122, .9);
+}
+.hidemenu ul {
+  margin-top: 200px;
+}
+.hidemenu li {
+  margin: 0 0 0 35%;
+  padding-top: 15px;
+  text-align: left;
+  list-style-type: none;
+}
+.hidemenu i {
+  font-size: 15px;
+  color: rgb(13, 169, 229);
+  background-color: white;
+  border-radius: 100%;
+}
+.hidemenu i[class="fa fa-home"] {
+  padding: 13px;
+}
+.hidemenu i[class="fa fa-heart-o"] {
+  padding: 13px 13px 12px 13px;
+}
+.hidemenu i[class="fa fa-desktop"] {
+  padding: 14px 13px 12px 13px;
+}
+.hidemenu i[class="fa fa-envelope-o"] {
+  padding: 12px 13px 12px 13px;
+}
+.hidemenu em {
+  margin-left: 30px;
+  color: white;
+}
+.hidemenu a {
+  width: 30px;
+  height: 30px;
+  border: none;
+}
+.hidemenu a:hover{
+  text-decoration: none;
+}
+.hidemenu li:hover em {
+  text-decoration: none;
+}
+.hidemenu li:hover i {
+  color: white;
+  background-color: #3d8bb4;
+}
+.hidemenusec {
+  float: right;
+  margin-top: 33.333px;
+}
+.hidemenusec i {
+  padding: 0;
+  font-size: 30px;
+  color: white;
+  background-color: rgba(0, 0, 0, 0);
+}
+.logotext {
+  padding-top: 33.333px;
+  text-align: center;
+}
+.tophead {
+  text-align: right;
+}
+.texthead {
+  text-align: right;
+  color: white;
+}
+.phone {
+  position: absolute;
+  margin: 284px 0 0 70px;
+  width: 228px;
+  height: 482px;
+  background-color: rgb(71, 78, 93);
+  border-radius: 30px;
+}
+.camera {
+  margin: 20px auto 0 auto;
+  width: 9px;
+  height: 9px;
+  background-color: rgb(165, 164, 164);
+  border-radius: 50%;
+}
+.loudspeaker {
+  margin: 10px auto 0 auto;
+  width: 43px;
+  height: 9px;
+  background-color: rgb(165, 164, 164);
+  border-radius: 30px;
+}
+.screen {
+  margin: 10px auto 0 auto;
+  width: 200px;
+  height: 350px;
+  background-image: -webkit-linear-gradient(bottom, white, #f3787a);
+  background-image: -o-linear-gradient(bottom, white, #f3787a);
+  background-image: linear-gradient(to top, white, #f3787a);
+  -webkit-background-size: 1000% 1000%;
+  background-size: 1000% 1000%;
+  background-repeat: no-repeat;
+  animation: grad 100s ease;
+  -webkit-animation-iteration-count: infinite;
+  -o-animation-iteration-count: infinite;
+  animation-iteration-count: infinite;
+}
+.texthead h1 {
+  padding-top: 70px;
+  font-size: 70px;
+  font-family: "BlackJackRegular";
+  line-height: 0.3;
+}
+.texthead p {
+  padding-top: 55px;
+  font-size: 35px;
+  font-family: "ProximaNova";
+  color: rgb(255, 255, 255);
+  line-height: 0.7;
+}
+.download {
+  display: inline-block;
+  margin-top: 55px;
+  width: 173px;
+  height: 57px;
+  border: 3px solid white;
+  background-color: rgba(66, 153, 213, 0);
+  font-size: 15px;
+  font-family: "proximanovaregular";
+  line-height: 1.7;
+  text-align: center;
+  outline: none;
+}
+.download:hover {
+  color: rgb(13, 169, 229);
+  background-color: white;
+}
+/*----about me------*/
+.aboutme {
+  height: 651px;
+  background-color: #f4f4f4;
+  font-size: 16px;
+  font-family: "Myarid";
+  color: rgb(126, 126, 126);
+  overflow: hidden;
+}
+.sayhello {
+  display: inline-block;
+  margin-top: 72px;
+  width: 173px;
+  height: 57px;
+  border: 3px solid #14af8f;
+  background-color: rgba(66, 153, 213, 0);
+  font-size: 15px;
+  font-family: "proximanovaregular";
+  color: #14af8f;
+  line-height: 1.7;
+  text-align: center;
+  outline: none;
+}
+.sayhello:hover {
+  background-color: #14af8f;
+  color: #f4f4f4;
+}
+.aboutme h1 {
+  margin-left: 20px;
+  padding-top: 143px; 
+  font-family:"ProximaNovalight"; 
+  font-size: 38px;
+  font-weight: bold;
+  color: rgb(84, 84, 84);
+  line-height: 0.6;
+}
+.aboutme p {
+  padding-top: 36px;
+  letter-spacing: 0.8px;
+}
+.line {
+  margin-top: 30px;
+  padding-left: 15px;
+  border-left: 7px solid #4eacdd;
+  letter-spacing: 0.8px;
+}
+.aboutme .ipad {
+  position: absolute;
+  margin: 150px 0 0 180px;
+  width: 408px;
+  height: 578px;
+  border-radius: 18px;
+  background-color: rgb(71, 78, 93);
+}
+.icamera {
+  margin: 25px auto 0 auto;
+  width: 8px;
+  height: 8px;
+  background-color: rgb(165, 165, 165);
+  border-radius: 50%;
+}
+.iscreen {
+  margin: 25px auto 0 auto;
+  width: 355px;
+  height: 475px;
+  background-color: #fee9a3;
+}
+/*----- portfolio ------*/
+.portfolio {
+  height: 651px;
+  font-size: 16px;
+  background-color: white;
+  overflow-y: hidden;
+}
+.portfolio .textportf {
+  margin-left: 155px;
+  width: 368px;
+}
+.portfolio img[src="images/devices.png"] {
+  margin: 285px 0 0 -244px;
+}
+.portfolio h1 {
+  margin-top: 100px;
+  font-size: 40px;
+  font-family: "proximanova";
+  color: #545454;
+  font-weight: bold;
+}
+.portfolio h2 {
+  margin-top: 35px;
+  font-size: 16px;
+  font-family: "ProximaNovabold";
+  color: #474e5d;
+  line-height: 1.5;
+  letter-spacing: .6px;
+  font-weight: lighter;
+}
+.portfolio p{
+  font-family: "proximanovaregular";
+  color: #7e7e7e;
+  margin-top: 25px;
+}
+.dribbble{
+  display: inline-block;
+  margin-top: 55px;
+  width: 220px;
+  height: 57px;
+  font-size: 15px;
+  font-family: "proximanovaregular";
+  color: #ea4c89;
+  background-color: rgba(66, 153, 213, 0);
+  line-height: 1.7;
+  text-align: center;
+  border: 3px solid #ea4c89;
+  outline: none;
+}
+.dribbble:hover {
+  background-color: #ea4c89;
+  color: white;
+}
+/*----donate -------*/
+.donate {
+  height: 326px;
+  font-size: 40px;
+  font-family: "ProximaNova";
+  color: rgb(255, 255, 255);
+  line-height: 0.6;
+  font-weight: lighter;
+  text-align: center;
+  background-image: url(../images/donate.png);
+}
+.donate h1 {
+  margin-top: 90px;
+}
+.beer {
+  display: inline-block;
+  margin-top: 20px;
+  width: 173px;
+  height: 57px;
+  color: white;
+  font-size: 15px;
+  font-family: "proximanovaregular";
+  line-height: 1.7;
+  text-align: center;
+  background-color: rgba(66, 153, 213, 0);
+  border: 3px solid white;
+  outline: none;
+}
+.beer:hover {
+  background-color: white;
+  color: #0bc3ad;
+}
+/*------contact-------*/
+.contact {
+  height: 650px;
+  color: rgb(84, 84, 84);
+  text-align: center;
+  background-color: rgb(244, 244, 244);
+}
+.contact i {
+  padding: 0px;
+  font-size: 25px;
+}
+.contact a {
+  color: rgb(84, 84, 84);
+  text-decoration: none;
+}
+.contact ul {
+  margin: 242px 0 67px -40px;
+}
+.contact li {
+  display: inline-block;
+  margin-left: 30px;
+  padding: 10px;
+  border: 3px solid rgb(84, 84, 84);
+  border-radius: 100px;
+  list-style-type: none;
+}
+.contact li:hover a {
+  color: #3d8bb4;
+}
+.contact li:hover {
+  border-color: #3d8bb4;
+}
+.contact li i[class="fa fa-paper-plane-o"] {
+  padding: 1px 2px 0 1px;
+}
+.contact li i[class="fa fa-facebook"] {
+  padding: 1px 7px 1px 7px;
+}
+.contact li i[class="fa fa-dribbble"] {
+  padding: 1px 3.5px 1px 3.5px;
+}
+.contact li i[class="fa fa-twitter"] {
+  padding: 1px 1px 1px 3px;
+}
+.subscribe {
+  margin-right: 30px;
+  font-family: "ProximaNovabold";
+  font-size: 16px;
+  letter-spacing: 0.3px;
+}
+.subscribe input {
+  margin-left: 15px;
+  padding-left: 20px;
+  width: 217px;
+  height: 43px;
+  font-size: 16px;
+  font-family: "proximanovabold";
+  letter-spacing: 0.4px;
+  border: none;
+  border-radius: 10px;
+  outline: none;
+}
+input::-webkit-input-placeholder { 
+  color: #d3d3d3;
+}
+.submitmail {
+  margin-left: -65px;
+  padding-left: 15px;
+  background-color: rgba(255, 255, 255, 0);
+  border: none;
+  border-left: 1px solid #e9e9e9;
+  outline: none;
+}
+.subscribe i:hover {
+ color: #57b7e0;
+}
+.subscribe i {
+  padding: 0px;
+  font-size: 16px;
+  color: #6ec5ea;
+}
+/*----footer-----*/
+footer {
+  height: 100px;
+  font-size: 12px;
+  font-family: "proximanovaregular";
+  color: rgb(84, 84, 84);
+  line-height: 2;
+  text-align: center;
+}
+footer a{
+  color: #a1d8f1;
+  text-decoration: none;
+}
+footer a:hover {
+  text-decoration: none;
+}
+footer i {
+  padding: 9px 10px 11px 10px;
+  color: #797979;
+  background-color: #f4f4f4;
+  border-radius: 6px;
+}
+footer .footertext {
+  margin-top: 40px;
+}
+footer .upperbutton {
+  margin-top: 34px;
+  text-align: right;
+}
+/*------animation-------*/
+@keyframes grad {
+    0%{background-position:0% 0%}
+  50%{background-position:100% 100%}
+  100%{background-position:0% 0%}
+}
+/*-----screen setting-----*/
+@media (max-width: 260px) {
+  .texthead p, #searchh {
+    display: none;
+  }
+}
+@media (max-width: 345px) {
+  .texthead h1 {
+    display: none;
+  }
+}
+@media (max-width: 500px) {
+    .texthead button {
+    display: none;
+  }
+}
+@media (max-width: 994px) {
+  .hidemenusec {
+    margin-top: -166.666px;
+  }
+  .texthead p{
+    line-height: 40px;
+  }
+  .texthead h1 {
+    font-size: 50px;
+  }
+  img[src="images/devices.png"]{
+    float: right;
+    width: 250px;
+    padding-top: 250px;
+  }
+  .portfolio .textportf {
+  margin-left: 10px;
+  width: 368px;
+  }
+}
+@media (min-width: 850px) {
+  body header .hidemenu li {
+    margin-left: 45%;
+  }
+}
+@media (min-width: 550px) {
+  body header .hidemenu li {
+    margin-left: 40%;
+  }
+}
+@media (max-width: 400px) {
+  body header .hidemenu li {
+    margin-left: 25%;
+  }
+}
