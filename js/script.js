@@ -7,7 +7,7 @@ $(document).ready(function() {
 		if ($(this).hasClass('active')) {
 			$(this).removeClass('active');
 			$('.hidemenu').fadeOut('slow');
-			$('body, html').css('overflow', 'auto');
+			$('body, html').css('overflow', 'auto').css('height', 'initial');
 		} else {
 			$(this).addClass('active');
 			$('.hidemenu').fadeIn('slow').css('display', 'flex');
@@ -21,7 +21,7 @@ $(document).ready(function() {
 		$("body,html").animate({scrollTop: top}, 800);
 		$('.hidemenu').fadeOut('slow');
 		$('.search').removeClass('active');
-		$('body, html').css('overflow', 'auto');
+		$('body, html').css('overflow', 'auto').css('height', 'initial');
 	});
 	$(".upperbutton a, .contact a, footer a").click(function(event) { 
 		event.preventDefault();    //отмена стаднартной обработки нажатия по ссылке
