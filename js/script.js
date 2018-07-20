@@ -1,22 +1,29 @@
 $(document).ready(function() {
 
-	$("#search").click(function(){
-		$("#hidemenu").fadeIn(600);
-		$(this).css("visibility", "hidden");
-	});
-	
-	$("#closelink, #hidemenu1 a").click(function() {
-		$(".hidemenu").fadeOut(600);
-		$("#search").css("visibility", "visible");
-	});
+	var date = new Date();
+    $('.date').text(date.getFullYear());
 
-	$("#hidemenu a").click(function(event) { 
+	$(".search").click(function(){
+		if ($(this).hasClass('active')) {
+			$(this).removeClass('active');
+			$('.hidemenu').fadeOut('slow');
+			$('body, html').css('overflow', 'auto');
+		} else {
+			$(this).addClass('active');
+			$('.hidemenu').fadeIn('slow').css('display', 'flex');
+			$('body, html').css('overflow', 'hidden');
+		}
+	});
+	$(".hidemenu a").click(function(event) { 
 		event.preventDefault();    //отмена стаднартной обработки нажатия по ссылке
 		var id = $(this).attr("href"),  //забираем индефикатор блока с атрибутом href
 		top = $(id).offset().top;   //узнаем высоту от начала страницы до блока
 		$("body,html").animate({scrollTop: top}, 800);
+		$('.hidemenu').fadeOut('slow');
+		$('.search').removeClass('active');
+		$('body, html').css('overflow', 'auto');
 	});
-	$(".upperbutton a").click(function(event) { 
+	$(".upperbutton a, .contact a, footer a").click(function(event) { 
 		event.preventDefault();    //отмена стаднартной обработки нажатия по ссылке
 		var id = $(this).attr("href"),  //забираем индефикатор блока с атрибутом href
 		top = $(id).offset().top;   //узнаем высоту от начала страницы до блока
