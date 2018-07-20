@@ -11,7 +11,7 @@ $(document).ready(function() {
 		} else {
 			$(this).addClass('active');
 			$('.hidemenu').fadeIn('slow').css('display', 'flex');
-			$('body, html').css('overflow', 'hidden');
+			$('body, html').css('overflow', 'hidden !important');
 		}
 	});
 	$(".hidemenu a").click(function(event) { 
