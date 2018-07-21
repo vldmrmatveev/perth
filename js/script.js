@@ -23,6 +23,11 @@ $(document).ready(function() {
 		$('.search').removeClass('active');
 		$('body, html').css('overflow', 'auto').css('height', 'initial');
 	});
+	$('.hidemenu').click(function(){
+		$(this).fadeOut('slow');
+		$('body, html').css('overflow', 'auto').css('height', 'initial');
+		$('.search').removeClass('active');
+	});
 	$(".upperbutton a, .contact a, footer a").click(function(event) { 
 		event.preventDefault();    //отмена стаднартной обработки нажатия по ссылке
 		var id = $(this).attr("href"),  //забираем индефикатор блока с атрибутом href
