@@ -106,6 +106,7 @@ header {
   outline: none;
   padding: 0;
   cursor: pointer;
+  z-index: 4;
 }
 .search__item {
   background-color: white;
